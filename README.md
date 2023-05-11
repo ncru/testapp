@@ -1,4 +1,4 @@
-# ActiveAdmin implementation on a Ruby on Rails app.
+# README
 
 This is a testapp using Ruby on Rails. ActiveAdmin is implemented.
 
