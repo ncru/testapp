@@ -8,3 +8,4 @@ Things you may want to cover:
 
 * Deployment instructions = 'bundle update', then 'rails server'.
 
+test co
