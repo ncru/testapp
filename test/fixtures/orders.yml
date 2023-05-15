@@ -1,0 +1,65 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_order_number: 1
+  customer_name: MyString
+  contact_number: 1
+  email: MyString
+  address: MyString
+  jacket_length: 1
+  back_width: 1
+  sleeves: 1
+  left_cuff: 1
+  right_cuff: 1
+  collar: 1
+  chest: 1
+  waist: 1
+  hips: 1
+  lapel_type: MyString
+  stature: MyString
+  shoulders: MyString
+  collar_type: MyString
+  cuff_type: MyString
+  pleats_options: MyString
+  back_pockets: false
+  crotch: 1
+  outseam: 1
+  waist_pants: 1
+  seat: 1
+  thigh: 1
+  knee: 1
+  bottom: 1
+  remarks: MyString
+  general_remarks: MyText
+
+two:
+  job_order_number: 1
+  customer_name: MyString
+  contact_number: 1
+  email: MyString
+  address: MyString
+  jacket_length: 1
+  back_width: 1
+  sleeves: 1
+  left_cuff: 1
+  right_cuff: 1
+  collar: 1
+  chest: 1
+  waist: 1
+  hips: 1
+  lapel_type: MyString
+  stature: MyString
+  shoulders: MyString
+  collar_type: MyString
+  cuff_type: MyString
+  pleats_options: MyString
+  back_pockets: false
+  crotch: 1
+  outseam: 1
+  waist_pants: 1
+  seat: 1
+  thigh: 1
+  knee: 1
+  bottom: 1
+  remarks: MyString
+  general_remarks: MyText

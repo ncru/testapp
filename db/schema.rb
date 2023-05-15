@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_15_045537) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_15_112356) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -35,6 +35,51 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_15_045537) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.integer "quantity"
+    t.string "fabric_lining_code"
+    t.integer "order_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_items_on_order_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "job_order_number"
+    t.string "customer_name"
+    t.integer "contact_number"
+    t.string "email"
+    t.string "address"
+    t.float "jacket_length"
+    t.float "back_width"
+    t.float "sleeves"
+    t.float "left_cuff"
+    t.float "right_cuff"
+    t.float "collar"
+    t.float "chest"
+    t.float "waist"
+    t.float "hips"
+    t.string "lapel_type"
+    t.string "stature"
+    t.string "shoulders"
+    t.string "collar_type"
+    t.string "cuff_type"
+    t.string "pleats_options"
+    t.boolean "back_pockets"
+    t.float "crotch"
+    t.float "outseam"
+    t.float "waist_pants"
+    t.float "seat"
+    t.float "thigh"
+    t.float "knee"
+    t.float "bottom"
+    t.string "remarks"
+    t.text "general_remarks"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "people", force: :cascade do |t|
@@ -77,4 +122,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_15_045537) do
     t.boolean "processed"
   end
 
+  add_foreign_key "items", "orders"
 end
