@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sales_job_order: MyString
+  fabric_selection: false
+  coat_job_order: false
+  pants_job_order: false
+  shirt_and_vest_job_order: false
+  alteration_job_order: false
+  first_suit_fitting: false
+  suit_adjustments: false
+  second_suit_fitting: false
+  suit_final_sewing: false
+  final_product_to_client: false
+
+two:
+  sales_job_order: MyString
+  fabric_selection: false
+  coat_job_order: false
+  pants_job_order: false
+  shirt_and_vest_job_order: false
+  alteration_job_order: false
+  first_suit_fitting: false
+  suit_adjustments: false
+  second_suit_fitting: false
+  suit_final_sewing: false
+  final_product_to_client: false
