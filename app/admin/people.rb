@@ -4,8 +4,9 @@ ActiveAdmin.register Person do
   form do |f|
     f.inputs "Person Details" do
       f.input :name
-      f.input :gender, as: :select, collection: ["Male", "Female"]
+      f.input :gender, as: :radio, collection: ["Male", "Female"]
       f.input :address, as: :text
+      f.input :clothing, as: :radio, collection: Person.clothings.keys
     end
     f.actions
   end
@@ -14,7 +15,7 @@ ActiveAdmin.register Person do
     selectable_column
     id_column
     column :name
-
+    columg :clothing
     actions
   end
   
