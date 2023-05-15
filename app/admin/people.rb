@@ -15,7 +15,7 @@ ActiveAdmin.register Person do
     selectable_column
     id_column
     column :name
-    columg :clothing
+    column :clothing
     actions
   end
   
