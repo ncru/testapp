@@ -48,7 +48,7 @@ ActiveAdmin.register SuitJobOrder do
       status_tag(order.final_product_to_client ? 'Processed' : 'Pending')
     end
     column :processed do |order|
-      status_tag order.processed ? 'Processed' : 'Pending'
+      status_tag(order.final_product_to_client ? 'Processed' : 'Pending')
     end
 
     actions
