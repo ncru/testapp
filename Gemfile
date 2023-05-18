@@ -79,3 +79,5 @@ gem 'cancancan'
 gem 'draper'
 gem 'pundit'
 gem 'sassc'
+
+gem 'pg'
