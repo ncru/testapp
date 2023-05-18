@@ -20,3 +20,7 @@ development:
 test:
   <<: *default
   database: Testapp_test
+
+production:
+  <<: *default
+  database: Testapp_production
